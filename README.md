@@ -9,10 +9,6 @@ module cloudflare_security_group {
   source = "github.com/joeguaneri/terraform-cloudflare-web-security-group.git"
 
   vpc_id = aws_vpc.vpc.id
-
-  providers = {
-    cloudflare = cloudflare
-  }
 }
 
 resource "aws_lb" "public_lb" {
